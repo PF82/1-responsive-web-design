@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    <header id="header">
+
+        <img id="header-img" src="./Images/download.jpg" alt="Custom Trombones Logo" />
+
+        <h1>Custom Trombones</h1>
+
+        <!-- https://www.w3schools.com/css/css_navbar_horizontal.asp -->
+        <nav id="nav-bar">
+            <ul class="nav-bar">
+                <li class="get-started">
+                    <a class="nav-link" href="#get-started">Get Started</a>
+                    </p>
+                <li class="pricing">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                    </p>
+                <li class="how-it-works">
+                    <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </p>
+                <li class="features">
+                    <a class="nav-link" href="#features">Features</a>
+                    </p>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- https://www.w3schools.com/css/css3_flexbox.asp -->
+    <section id="features">
+        <div id="pm">
+            <img class="pm" src="./Images/download1.png" alt="Premium Materials">
+            <div class="h-p">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
+                    your purchase.</p>
+            </div>
+        </div>
+        <div id="fs">
+            <img class="fs" src="./Images/download2.jpg" alt="Fast Shipping">
+            <div class="h-p">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free
+                    returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div id="qa">
+            <img class="qa" src="./Images/download3.jpg" alt="Quality Assurance">
+            <div class="h-p">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                    the
+                    pitch of your instrument.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- https://www.w3schools.com/html/html_iframe.asp -->
+    <!-- The src attribute defines the url of the page to embed -->
+    <!-- https://www.w3schools.com/tags/tag_iframe.ASP -->
+    <!-- https://www.w3schools.com/tags/ref_av_dom.asp -->
+    <!-- Embed word added to link as it wasn't working -->
+    <section id="how-it-works">
+        <h3>Watch Our Video</h3>
+        <iframe id="video" title="" width="600" height="340" style="border: none;"
+            src="https://www.youtube.com/embed/Cl9LX3tQgtk" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+        <div class="tenor">
+            <div class="columns-top">
+                <p>Tenor Trombone</p>
+            </div>
+            <p class="price-tag">$600</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <button type="button">Select</button>
+        </div>
+        <div class="bass">
+            <div class="columns-top">
+                <p>Bass Trombone</p>
+            </div>
+            <p class="price-tag">$900</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <button type="button">Select</button>
+        </div>
+        <div class="valve">
+            <div class="columns-top">
+                <p>Valve Trombone</p>
+            </div>
+            <p class="price-tag">$1200</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <button type="button">Select</button>
+        </div>
+    </section>
+
+    <section id="get-started">
+        <h4>Contact Us</h4>
+        <!-- To submit email/form to a static page (url), use action attr to form as opposed to href attr to input  -->
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">
+                <input id="email" type="email" name="email" placeholder="Enter your email address" required />
+            </label>
+
+            <label for="submit">
+                <input id="submit" type="submit" value="Get Started" />
+            </label>
+        </form>
+    </section>
+</body>
+
+<footer id="main-footer">
+    <ul class="footer">
+        <li><a href="#" class="p">Privacy</a></li>
+        <li><a href="#" class="t">Terms</a></li>
+        <li><a href="#" class="c">Contact</a></li>
+    </ul>
+    <span>Copyright &copy;2017, The world's leading custom trombone builder</span>
+</footer>
+
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body, #navbar, .nav-link {
+    font-family: 'Source+Sans+Pro', sans-serif, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    background-color: yellow;
+}
+
+/* https://www.w3schools.com/css/css_navbar.asp */
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    width: 21%;
+    top: 0;
+    left: 0;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.nav-link {
+    display: block;
+    text-align: left;
+    padding: 13px 30px;
+    text-decoration: none;
+    line-height: 1;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+
+.nav-link:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    .navbar-header {
+        padding: 5px 10px;
+    }
+    h1 {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    img {
+        width: 10%;
+    }
+    .nav-link {
+        padding: 7px 15px;
+        line-height: 0.5;
+        font-size: 15px;
+    }
+}
+
+#main-doc {
+    margin: 0 21%;
+    padding: 0;
+    width: 79%;
+    display: block;
+    background-color: yellow;
+    color: black;
+}
+
+.main-section {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgba(160, 160, 26, 0.74);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+     #main-doc {
+        margin: 380px 0;
+        width: 100%;
+    }
+    .main-section {
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    header {
+        font-size: 15px;
+    }
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.white-circle {
+    margin: 15px 30px;
+    list-style-type: circle;
+}
+
+/* unvisited link */
+li a:link {
+    color: green;
+}
+
+/* visited link */
+li a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+li a:hover {
+    color: red;
+}
+
+/* selected link */
+li a:active {
+    color: magenta;
+}

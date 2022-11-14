@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- https://www.w3schools.com/html/html_responsive.asp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="webpage-title">Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="./Style.css" />
+</head>
+
+<!-- header -->
+
+<header>
+  <h1 id="title">
+    freeCodeCamp Survey Form</h1>
+  <p id="description">
+    Thank you for taking the time to help us improve the platform
+  </p>
+</header>
+
+<!-- form -->
+
+<!-- https://www.w3schools.com/tags/tag_form.asp -->
+<!-- form tag is used to create an html form for user input; it typically contains input, textarea, button, select, option, label, etc elements -->
+<!-- action attr specifies where to send the form-data when a form is submitted -->
+<!-- method attr specifies the http method to use when sending form-data -->
+
+<form id="survey-form" action="" method="">
+
+  <!-- inputs and labels (text, email and number)  -->
+
+  <div class="user-details">
+    <!-- label tag defines a label for several elements -->
+    <label for="name" class="input-label">Name
+      <!-- https://www.w3schools.com/tags/tag_input.asp -->
+      <!-- name attr specifies a name for an html element; for a form is used as a reference when the data is submitted; can be used to reference the element in javascript -->
+      <!-- placeholder attr specifies a short hint that describes the expected value of the element -->
+      <input id="name" value="" type="text" name="name" placeholder="Enter your name">
+    </label>
+    <label for="email" class="input-label">Email
+      <input id="email" value="" type="email" name="email" placeholder="Enter your email">
+    </label>
+    <!-- span tag is an inline container used to mark up a part of a text or a part of a document -->
+    <label for="number" class="input-label">Age <span class="clue">(optional)</span>
+      <!-- min attr specifies the minimum value allowed -->
+      <!-- max attr specifies the maximum value allowed -->
+      <!-- value attr specifies the initial value of the element for button, input and option elements -->
+      <input id="number" value="" type="number" name="age" min="10" max="99" placeholder="Age">
+    </label>
+  </div>
+
+  <!-- select and options (drop-down list) -->
+
+  <div class="user-occupation">
+    <p class="form-question">Which option best describes your current role?</p>
+    <!-- select element is used to create a drop-down list -->
+    <select name="user-role" id="drop-down-list">
+      <!-- replace value attr with 'disabled selected value' otherwise it won't show the text as first in drop-down list -->
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="prefer no">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <!-- radio buttons -->
+
+  <!-- https://www.youtube.com/watch?v=oLmRV25eQvo -->
+
+  <div class="user-recommendation">
+    <p class="form-question">Would you recommend freeCodeCamp to a friend?</p>
+    <div class="radio-checkbox">
+      <!-- checked attr is a boolean attribute; it specifies that an input element should be pre-selected (checked) when the page loads -->
+      <input id="input-radio" value="definitely" type="radio" name="user-recommendation" checked>
+      <label for="input-radio" class="radio">Definitely</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-radio" value="maybe" type="radio" name="user-recommendation">
+      <label for="input-radio" class="radio">Maybe</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-radio" value="not sure" type="radio" name="user-recommendation">
+      <label for="input-radio" class="radio">Not sure</label>
+    </div>
+  </div>
+
+  <!-- select and options (drop-down list) -->
+
+  <div class="user-favorite">
+    <p class="form-question">What is your favorite feature of freeCodeCamp?</p>
+    <!-- select element is used to create a drop-down list -->
+    <!-- required attr is a boolean attribute; it specifies that the element must be filled out before submitting the form -->
+    <select name="favorite" id="drop-down-list" required>
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="openSource">Open source</option>
+    </select>
+  </div>
+
+  <!-- checkboxes -->
+  <!-- https://www.youtube.com/watch?v=oLmRV25eQvo -->
+
+  <div class="user-suggestion">
+    <p class="form-question">What would you like to see improved?<span class="clue"> (Check all that apply)</span></p>
+
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="front-end-projects" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Front-end-projects</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="back-end-projects" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Back-end-projects</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="data-visualization" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Data Visualization</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="challenges" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Challenges</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="open-source-community" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Open Source Community</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="gitter-help-rooms" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Gitter help rooms</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="videos" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Videos</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="city-meetups" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">City Meetups</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="wiki" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Wiki</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" value="forum" type="checkbox" name="user-suggestion">
+      <label for="input-checkbox" class="checkbox">Forum</label>
+    </div>
+    <div class="radio-checkbox">
+      <input id="input-checkbox" type="checkbox" name="user-suggestion" value="additional-courses">
+      <label for="input-checkbox" class="checkbox">Additional Courses</label>
+    </div>
+  </div>
+
+  <!-- textarea -->
+
+  <div class="user-comments">
+    <P class="form-question">Any comments or suggestions?</P>
+    <textarea name="comments" id="text-area" placeholder="Enter your comment here..."></textarea>
+  </div>
+
+  <!-- submit button -->
+
+  <div class="user-submittion">
+    <!-- <input type="submit" name="submit" value="Submit"/> or -->
+    <button type="submit" id="submit">Submit</button>
+  </div>
+
+</form>
+
+</html>

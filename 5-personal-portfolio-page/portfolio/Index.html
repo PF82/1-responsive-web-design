@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- https://reactjsexample.com/22-best-react-portfolio-page-templates-in-2021/ -->
+<!-- https://themeforest.net/item/reactjs-creative-personal-portfolio-template-miro/27150547?irgwc=1&clickid=0hVSwJUTHxyIW0UzQ6xwoywVUkGy5t3Y1R8uX80&iradid=275988&irpid=2305834&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_2305834&utm_medium=affiliate&utm_source=impact_radius -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<!-- https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+<!-- TOP NAVIGATION BAR -->
+
+<nav id="top-nav-bar">
+    <!-- Top Navigation Menu -->
+    <div class="hor-nav-bar">
+        <img class="logo" src="./Images/PF.jpg" alt="Company Logo">
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a class="my-links" href="#home">Home</a>
+            <a class="my-links" href="#about">About</a>
+            <a class="my-links" href="#services">Services</a>
+            <a class="my-links" href="#portfolio">Portfolio</a>
+            <a class="my-links" href="#testimonial">Testimonial</a>
+            <a class="my-links" href="#pricing">Pricing</a>
+            <a class="my-links" href="#contact">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</nav>
+
+<body>
+
+    <!-- HOME -->
+
+    <section id="home">
+        <img class="office-image" src="./Images/Office.jpg" alt="Office Image">
+        <img class="photo" src="./Images/Photo.jpg" alt="Photo">
+        <div class="introduction">
+            <h4>Hello! I'm</h4>
+            <h2>Pedro Fernandes.</h2>
+            <h1>Web Developer</h1>
+            <h3>based in London.</h3>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae impedit asperiores quos
+                corrupti, non nisi dolores eos ex quasi repudiandae sit iste nesciunt optio officia fugit doloremque?
+                Deleniti, dolores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae impedit asperiores quos
+                corrupti, non nisi dolores eos ex quasi repudiandae sit iste nesciunt optio officia fugit doloremque?
+                Deleniti, dolores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae impedit asperiores quos
+                corrupti, non nisi dolores eos ex quasi repudiandae sit iste nesciunt optio officia fugit doloremque?
+                Deleniti, dolores!</p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Personal Websites</li>
+            <li>Small Business Websites</li>
+            <li>Corporate Websites</li>
+            <li>Web Applications</li>
+        </ul>
+        <h3>Main Skills</h3>
+        <div class="logo-group">
+            <div class="software-logo">
+                <p>HTML</p>
+                <img src="./Images/HTML.jpg" alt="HTML Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>CSS</p>
+                <img src="./Images/CSS.jpg" alt="CSS Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>JavaScript</p>
+                <img src="./Images/JavaScript.jpg" alt="JavaScript Logo" width="90px">
+            </div>
+            <div class="software-logo">
+                <p>Bootstrap</p>
+                <img src="./Images/Bootstrap.jpg" alt="Bootstrap Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>jQuery</p>
+                <img src="./Images/jQuery.jpg" alt="jQuery Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>React</p>
+                <img src="./Images/React.jpg" alt="React Logo" width="100px">
+            </div>
+            <div class="software-logo">
+                <p>Node</p>
+                <img src="./Images/Node.jpg" alt="Node Logo" width="100px">
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="projects-section">
+        <h2 class="projects-section-header">Portfolio (Main Projets)</h2>
+
+        <div class="projects-grid">
+            <a href="https://codepen.io/PF82/details/ExwrRpV" target="_blank" class="project project-tile"
+                style="text-decoration: none;">
+                <img class="project-image" src="./Projects/1. Tribute page.jpg" alt="Tribute Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Tribute Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/YzrBJGG" target="_blank" class="project project-tile"
+                style="text-decoration: none;">
+                <img class="project-image" src="./Projects/2. Survey form.jpg" alt="Survey Form" />
+                <p class="project-title">
+                    <span class="code">
+                        Survey Form</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/wvPKeKY" target="_blank" class="project project-tile"
+                style="text-decoration: none;">
+                <img class="project-image" src="./Projects/3. Product landing page.jpg" alt="Product Landing Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Product Landing Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/JjOGoPM" target="_blank" class="project project-tile"
+                style="text-decoration: none;">
+                <img class="project-image" src="./Projects/4. Technical documentation page.jpg"
+                    alt="Technical Documentation Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Technical Documentation Page</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/PF82/details/KKygBQo" target="_blank" class="project project-tile"
+                style="text-decoration: none;">
+                <img class="project-image" src="./Projects/5. Personal portfolio page.jpg"
+                    alt="Personal Portfolio Page" />
+                <p class="project-title">
+                    <span class="code">
+                        Personal Portfolio Page</span>
+                </p>
+            </a>
+        </div>
+
+        <a href="https://codepen.io/FreeCodeCamp/" class="btn-show-all" target="_blank"
+            style="text-decoration: none;">Show all<i class="fa fa-chevron-right"></i></a>
+    </section>
+
+    <!-- TESTIMONIAL -->
+
+    <section id="testimonial">
+        <div class="testimonial">
+            <h2>Testimonial</h2>
+            <article class="post-1">
+                <p>Beatifull design and functional website</p>
+                <blockquote cite="http://traversymedia.com">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </blockquote>
+                <small class="posted-by">Posted on November 2022<cite class="posted-by"> by Brad Traversy</cite></small>
+            </article>
+            <article class="post-2">
+                <p>Outstanding web application for my business</p>
+                <blockquote cite="http://juliodev.com">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </blockquote>
+                <small>Posted on January 2022<cite> by Sotor Dev</cite></small>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+
+    <section id="pricing">
+        <h2>Pricing Plan</h2>
+        <table>
+            <tr>
+                <th>Type of Website / Web App</th>
+                <th>Estimated Time</th>
+                <th>Hourly Rate</th>
+                <th>Estimated Cost</th>
+            </tr>
+            <tr>
+                <td class="text">Personal Website</td>
+                <td class="pricing">40 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€600</td>
+            </tr>
+            <tr>
+                <td class="text">Small Business Website</td>
+                <td class="pricing">80 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€1,200</td>
+            </tr>
+            <tr>
+                <td class="text">Corporate Website</td>
+                <td class="pricing">120 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€1,800</td>
+            </tr>
+            <tr>
+                <td class="text">Web Application (Simple)</td>
+                <td class="pricing">160 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€2,400</td>
+            </tr>
+            <tr>
+                <td class="text">Web Application (Average)</td>
+                <td class="pricing">200 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€3,000</td>
+            </tr>
+            <tr>
+                <td class="text">Web Application (Complex)</td>
+                <td class="pricing">300 Hours</td>
+                <td class="pricing">€15</td>
+                <td class="pricing">€4,500</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- CONTACT (FORM & CONTACT BUTTONS) -->
+
+    <form id="contact" action="" method="">
+        <div class="contact">
+            <h2>Let's work together...</h2>
+            <h4>by making your vision concept a reality!</h4>
+
+            <div class="user-input">
+                <label for="name" class="input-label">Name
+                    <input id="name" value="" type="text" name="name" placeholder="Enter your name">
+                </label>
+                <label for="email" class="input-label">Email
+                    <input id="email" value="" type="email" name="email" placeholder="Enter your email">
+                </label>
+                <label for="phone" class="input-label">Phone Number<span class="clue">(optional)</span>
+                    <input id="phone" value="" type="tel" name="phone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                        placeholder="Enter your phone number (For example: +00-0000-000-000)">
+                </label>
+                <label for="message" class="input-label">Message
+                    <textarea name="comments" id="text-area" placeholder="Enter your message here..."></textarea>
+                </label>
+                <label for="submit" class="input-label">
+                    <input id="submit" value="Submit" type="submit" name="submit">
+                </label>
+            </div>
+        </div>
+
+        <div class="contact-buttons">
+            <div class="button">
+                <div class="icon"><a class="a" href="www.o2.co.uk" target="_blank"><i
+                            class="fa fa-mobile-phone"></i></a>
+                </div>
+                <span>Mobile Phone</span>
+            </div>
+            <div class="button">
+                <div class="icon"><a class="a" href="www.whatsapp.com" target="_blank"><i
+                            class="fa fa-whatsapp"></i></a>
+                </div>
+                <span>WhatsApp</span>
+            </div>
+            <div class="button">
+                <div class="icon"><a class="a" href="www.skype.com" target="_blank"><i class="fa fa-skype"></i></a>
+                </div>
+                <span>Skype</span>
+            </div>
+        </div>
+    </form>
+</body>
+
+<!-- FOOTER (SOCIAL MEDIA BUTTONS & COPYRIGHT) -->
+
+<footer id="footer">
+    <div class="social-media-buttons">
+        <div class="button">
+            <div class="icon"><a class="a" href="www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <span>LinkedIn</span>
+        </div>
+        <div class="button">
+            <div class="icon"><a class="a" href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+            <span>Facebook</span>
+        </div>
+        <div class="button">
+            <div class="icon"><a class="a" href="www.github.com" target="_blank"><i class="fa fa-github"></i></a></div>
+            <span>GitHub</span>
+        </div>
+    </div>
+    <p class="copy-right">Copyright &copy; 2021, Built by PF</p>
+</footer>
+
+</html>

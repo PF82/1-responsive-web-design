@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif, "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+    background-color: yellow;
+    margin: 0;
+
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(https://www.mrmaglocci.com/uploads/5/9/2/0/59208011/nyp-section_1_orig.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#header-img {
+    width: 75px;
+    height: 50px;
+    padding: 10px 10px;
+}
+
+#header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.features, .how-it-works, .pricing, .get-started {
+    float: right;
+}
+
+h1, img {
+    float: left;
+}
+
+.features, .how-it-works, .pricing, .get-started, .nav-link, h1, img {
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        position: static;
+        height: 45px;
+        margin-bottom: -100px;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 15px;
+        padding-top: 2px;
+        padding-left: 0px;
+    }
+
+    #header-img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+}
+
+#features {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+#pm, #fs, #qa {
+    display: flex;
+    align-items: center;
+    padding: 0 350px;
+}
+
+.h-p {
+    flex-wrap: wrap;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.pm, .fs, .qa {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    #pm, #fs, #qa {
+        padding: 0;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #pm {
+        margin-top: 10px;
+    }
+
+    .h-p {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .pm, .fs, .qa {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#how-it-works {
+    padding-top: 0.05px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    #how-it-works {
+        padding: 0;
+        text-align: center;
+        font-size: 15px;
+        margin-top: -30px;
+    }
+
+    #video {
+        width: 300px;
+        height: 140px;
+        margin-bottom: 40px;
+    }
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 70px 250px;
+}
+
+.tenor, .bass, .valve {
+    border: 2px solid white;
+    width: calc(100% / 3);
+    height: 400px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 0.5;
+    flex-basis: 30%;
+}
+
+.columns-top {
+    font-weight: bold;
+    background-color: black;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+
+.price-tag {
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #pricing {
+        margin: 0 auto;
+    }
+
+    .columns-top {
+        line-height: 1;
+        font-size: 15px;
+    }
+}
+
+#get-started {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+#email, #submit {
+    width: 30%;
+    height: 30px;
+    display: block;
+    margin: 20px auto;
+}
+
+#submit {
+    width: 15%;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #get-started {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #form {
+        align-items: left;
+        display: inline-block;
+    }
+
+    #email {
+        width: 300px;
+        margin-top: -15px;
+    }
+
+    #submit {
+        width: 150px;
+    }
+}
+
+#main-footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+span {
+    float: right;
+    padding: 20px 55px;
+}
+
+.footer {
+    list-style-type: none;
+    float: left;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.p, .t, .c {
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+}
